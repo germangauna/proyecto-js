@@ -299,6 +299,11 @@ body {
     opacity: 0;
     pointer-events: none;
 }
+.testimony__body--show {
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
 
 .testimony__img {
     width: 250px;
@@ -309,7 +314,10 @@ body {
 }
 
 .testimony__course {
-    
+    background-color: royalblue;
+    color: #fff;
+    display: block;
+    padding: 5px;
 }
 
 .testimony__texts {

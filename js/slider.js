@@ -18,8 +18,18 @@
      });
 
      const changePosition = (add) => {
-        console.log(add);
+
+     const currenTestimony = document.querySelector('.testimony__body--show').dataset.id; 
+       value = Number(currenTestimony),
+       value+= add;
+       
+       if(value === sliders.length+1 || value === 0){
+        value === 0 ? sliders.length : 1;
+
+        console.log(value);
         
-     }
+    }
+       
+       }
     
  })();
